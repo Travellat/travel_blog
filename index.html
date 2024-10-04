@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Блог о путешествиях: лучшие советы, маршруты и отзывы.">
+    <title>Блог о Путешествиях</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Блог о Путешествиях</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#blog">Блог</a></li>
+                    <li><a href="#about">О блоге</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Главный баннер -->
+    <section id="home" class="banner">
+        <div class="container">
+            <h2>Добро пожаловать в наш блог о путешествиях!</h2>
+            <p>Читайте наши советы и истории из разных уголков мира.</p>
+            <a href="#blog" class="btn">Читать блог</a>
+        </div>
+    </section>
+
+    <!-- Последние посты блога -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2>Последние посты</h2>
+
+            <!-- Пост 1 -->
+            <article class="post">
+                <h3><a href="posts/post1.html">Путешествие по Италии: Что стоит увидеть</a></h3>
+                <p>Италия — страна, полная культурных богатств, красивых пейзажей и вкусной еды. Узнайте, что стоит посетить...</p>
+                <a href="posts/post1.html" class="read-more">Читать далее</a>
+            </article>
+
+            <!-- Пост 2 -->
+            <article class="post">
+                <h3><a href="posts/post2.html">Топ-5 пляжей мира для отдыха</a></h3>
+                <p>Мечтаете о белом песке и кристально чистой воде? Вот наш список лучших пляжей для идеального отдыха...</p>
+                <a href="posts/post2.html" class="read-more">Читать далее</a>
+            </article>
+
+            <!-- Пост 3 -->
+            <article class="post">
+                <h3><a href="posts/post3.html">Советы по организации бюджетного путешествия</a></h3>
+                <p>Путешествовать и при этом экономить деньги — реально! Узнайте, как правильно планировать бюджетные поездки...</p>
+                <a href="posts/post3.html" class="read-more">Читать далее</a>
+            </article>
+        </div>
+    </section>
+
+    <!-- О блоге -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>О нашем блоге</h2>
+            <p>Этот блог создан для всех, кто любит путешествия. Мы делимся своим опытом, рассказываем о лучших направлениях и даем советы путешественникам.</p>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Свяжитесь с нами</h2>
+            <p>Есть вопросы или хотите поделиться своей историей путешествия? Напишите нам!</p>
+            <form action="submit_form.php" method="post">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Подвал сайта -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Блог о путешествиях. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>
+<form action="https://formspree.io/f/manywelz" method="POST">
+    <label for="name">Имя:</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="message">Сообщение:</label>
+    <textarea id="message" name="message" required></textarea>
+    
+    <button type="submit">Отправить</button>
+</form>
+<form action="https://formspree.io/f/manywelz" method="POST" data-formspree="true">
+    ...
+</form>
